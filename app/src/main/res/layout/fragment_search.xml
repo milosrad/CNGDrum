@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_search_background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textsearchsettings"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/text_title_color"
+        android:textSize="24dp"
+        android:text="Search Settings"/>
+
+
+    <TextView
+        android:id="@+id/textsearchbyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textsearchsettings"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_title_color"
+        android:textSize="16dp"
+        android:text="Search By Name"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/edittextname"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textsearchbyname"
+        android:layout_marginLeft="20dp"
+        android:background="@color/color_search_fields_background"/>
+
+    <TextView
+        android:id="@+id/textsearchbyregion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextname"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_title_color"
+        android:textSize="16dp"
+        android:text="Region"
+        android:layout_marginTop="50dp" />
+
+    <Spinner
+        android:id="@+id/spinnerregion"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/color_search_fields_background"
+        android:layout_below="@+id/textsearchbyregion"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_title_color"
+        android:textSize="16dp"
+        >
+
+
+
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textfilterby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerregion"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_title_color"
+        android:textSize="16dp"
+        android:text="Filter by"
+        android:layout_marginTop="50dp" />
+
+    <Spinner
+        android:id="@+id/spinnertags"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/color_search_fields_background"
+        android:layout_below="@+id/textfilterby"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_title_color"
+        android:textSize="16dp"
+        >
+
+
+
+
+    </Spinner>
+
+
+
+    <Button
+        android:id="@+id/buttoncontinuesearch"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/spinnertags"
+        android:background="@color/color_search_continue_button"
+        android:textSize="16dp"
+        android:textColor="@color/text_title_color"
+        android:layout_marginTop="50dp"
+        android:text="Continue Search"/>
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/spinnerregion"
+
+        android:background="@color/color_search_spinner"
+        android:id="@+id/relativeLayout"
+        android:layout_above="@+id/textfilterby">
+
+
+        <cubes.cngdrum.ui.activity.IconText
+            android:id="@+id/iconDropDownRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="@color/icon_color"
+            android:text="@string/icon_dropdown"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+
+        android:background="@color/color_search_spinner"
+        android:layout_alignTop="@+id/spinnertags"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_alignRight="@+id/buttoncontinuesearch"
+        android:layout_alignEnd="@+id/buttoncontinuesearch">
+
+        <cubes.cngdrum.ui.activity.IconText
+            android:id="@+id/iconDropDownFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="@color/icon_color"
+            android:text="@string/icon_dropdown"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

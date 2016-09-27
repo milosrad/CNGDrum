@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_background_transparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_item_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        >
+        <TextView android:id="@+id/title"
+            android:textSize="16dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Naslov"
+            android:layout_margin="10dp"/>
+        <TextView android:id="@+id/distance"
+            android:textSize="14dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:text="@string/text_distance"/>
+        <TextView android:id="@+id/address"
+            android:textSize="14dp"
+            android:textColor="@color/text_description_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title"
+            android:layout_toLeftOf="@+id/distance"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="Naslov das dsa das das da"/>
+        <cubes.cngdrum.ui.activity.IconText
+            android:id="@+id/iconCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/address"
+            android:textColor="@color/icon_color"
+            android:text="@string/icon_call"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="13dp"/>
+        <TextView android:id="@+id/phoneNumber"
+            android:textSize="14dp"
+            android:textColor="@color/text_description_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iconCall"
+            android:layout_below="@+id/address"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="+312 421 421"/>
+        <TextView android:id="@+id/distanceValue"
+            android:textSize="18dp"
+            android:textColor="@color/text_description_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/address"
+            android:layout_margin="10dp"
+            android:text="12 km"/>
+    </RelativeLayout>
+
+</LinearLayout>

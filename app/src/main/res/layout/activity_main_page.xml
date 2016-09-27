@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="top"
+        android:background="@color/toolbar_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <cubes.cngdrum.ui.activity.IconText
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_menu"
+                android:textColor="@color/icon_color"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="30dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/toolbar_logo" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout android:background="@drawable/splash_screen_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash_screen_background"
+            android:tint="@color/background_fade"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_fade" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewCNG"
+                android:layout_width="@dimen/main_button_dimen"
+                android:layout_height="@dimen/main_button_dimen"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/main_button_margin"
+                android:src="@drawable/icon_cng" />
+
+            <ImageView
+                android:id="@+id/imageViewMap"
+                android:layout_width="@dimen/main_button_dimen"
+                android:layout_height="@dimen/main_button_dimen"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/main_button_margin"
+                android:layout_toRightOf="@id/imageViewCNG"
+                android:src="@drawable/icon_map" />
+
+            <ImageView
+                android:id="@+id/imageViewService"
+                android:layout_width="@dimen/main_button_dimen"
+                android:layout_height="@dimen/main_button_dimen"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/imageViewCNG"
+                android:layout_margin="@dimen/main_button_margin"
+                android:src="@drawable/icon_service" />
+
+            <ImageView
+                android:id="@+id/imageViewInfo"
+                android:layout_width="@dimen/main_button_dimen"
+                android:layout_height="@dimen/main_button_dimen"
+                android:layout_below="@id/imageViewCNG"
+                android:layout_margin="@dimen/main_button_margin"
+                android:layout_toRightOf="@id/imageViewService"
+                android:src="@drawable/icon_info" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/listViewNavigation"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="@color/navigation_background"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CNGDrum</string>
+    <string name="text_distance">distance:</string>
+    <string name="button_search">Continue Search</string>
+
+    <!-- Icon fonts -->
+    <string name="icon_back">&#xE5C4;</string>
+    <string name="icon_search">&#xE8B6;</string>
+    <string name="icon_map">&#xE55B;</string>
+    <string name="icon_call">&#xE0B0;</string>
+    <string name="icon_clock">&#xE192;</string>
+    
+    <string name="icon_location">&#xE55F;</string>
+    <string name="icon_web">&#xE894;</string>
+    <string name="icon_dropdown">&#xE5C5;</string>
+    <string name="icon_menu">&#xE5D2;</string>
+
+    <!-- String Array -->
+
+    <string-array name="menu_options">
+
+        <item>Main Menu</item>
+        <item>CNG</item>
+        <item>Map</item>
+        <item>Services</item>
+        <item>Info</item>
+        <item>Support</item>
+        <item>About us</item>
+        <item>Language Settings</item>
+        <item>Settings</item>
+
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_gravity="top"
+            android:background="@color/toolbar_background"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <cubes.cngdrum.ui.activity.IconText
+                    android:id="@+id/backdetails"
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_back"
+                android:textSize="30dp"
+                android:textColor="@color/icon_color"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/toolbar_logo" />
+            <cubes.cngdrum.ui.activity.IconText
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_search"
+                android:textSize="30dp"
+                android:textColor="@color/icon_color"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+            <cubes.cngdrum.ui.activity.IconText
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_map"
+                android:textSize="30dp"
+                android:textColor="@color/icon_color"
+                android:layout_toLeftOf="@+id/search"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <Gallery
+        android:id="@+id/imageViewdetails"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageViewdetails"
+        android:background="@color/color_details_background">
+
+        <TextView
+            android:id="@+id/titledetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_title_color"
+            android:text="Naslov"
+            android:textSize="16dp"/>
+
+
+        <TextView android:id="@+id/distancedetails"
+            android:textSize="14dp"
+            android:textColor="@color/color_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_distance"
+            android:layout_gravity="right|top" />
+
+
+        <TextView
+            android:id="@+id/distanceValuedetails"
+            android:textSize="18dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="12 km"
+            android:layout_gravity="right|top" />
+
+        <TextView
+            android:id="@+id/locationdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/color_details"
+            android:textSize="16dp"
+            android:text="Location"/>
+
+        <cubes.cngdrum.ui.activity.IconText
+            android:id="@+id/iconTimedetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/icon_color"
+            android:text="@string/icon_clock"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="70dp"/>
+
+        <TextView android:id="@+id/timedetails"
+            android:textSize="14dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Naslov das dsa das das da"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="40dp"
+            />
+
+
+        <cubes.cngdrum.ui.activity.IconText
+            android:id="@+id/iconLocationdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/icon_color"
+            android:text="@string/icon_location"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/locatiomapdetails"
+            android:textSize="14dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Naslov das dsa das das da"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <cubes.cngdrum.ui.activity.IconText
+            android:id="@+id/iconphonedetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/icon_color"
+            android:text="@string/icon_call"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="110dp"/>
+
+        <TextView
+            android:id="@+id/phonenumberdetails"
+            android:textSize="14dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="+312 421 421"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <cubes.cngdrum.ui.activity.IconText
+            android:id="@+id/iconwebdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/icon_color"
+            android:text="@string/icon_web"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="130dp"/>
+
+        <TextView
+            android:id="@+id/webdetails"
+            android:textSize="14dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="www.nispetrol.rs"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/additionaldetails"
+            android:textSize="14dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="www.nispetrol.rs"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tagsdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="220dp"
+            android:textColor="@color/color_details"
+            android:textSize="16dp"
+            android:text="Tags"/>
+
+
+        <TextView
+            android:id="@+id/featuresldetails"
+            android:textSize="14dp"
+            android:textColor="@color/text_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="CaffeBar,Market,WC,WiFi..."
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="20dp"/>
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>
