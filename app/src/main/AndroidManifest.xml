@@ -47,6 +47,9 @@ package="cubes.cngdrum">
     <meta-data android:name="com.google.android.geo.API_KEY"
         android:value="AIzaSyDa1-fdsuVb-0ecn_Yq3N3GPNoNNGTBXpg" />
 
-</application>
+    <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d2bdf933154f3039b2559490c4f3181707b4e621" />
+    </application>
 
 </manifest>
